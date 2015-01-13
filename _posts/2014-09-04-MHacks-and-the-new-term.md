@@ -9,4 +9,4 @@ Now that the first semester is underway, I need to buy a couple textbooks and wo
 
 Where I am plays a big role in how productive I am. I cannot work at the co-op. I can work in my office, but I do not like it there. I love the library stacks:  it is absolutely quiet and I am surrounded by books. I also enjoy the Pierpont Commons. This semester I want to keep things fresh. My long afternoons make it possible to study on central campus occasionally. There are many spaces there I have not yet explored.
 
-![Minecraft art!](../images/MHacksMinecraft.jpg)
+![Minecraft art!](/images/MHacksMinecraft.jpg)

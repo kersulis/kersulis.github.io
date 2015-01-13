@@ -52,6 +52,7 @@ pip install invoke
 If any of the above commands fails, switch to root with `sudo -s` and try again.
 
 Now clone the IPython git repo and navigate to its directory:
+
 ```bash
 git clone --recursive https://github.com/ipython/ipython.git
 cd ipython
@@ -68,6 +69,7 @@ pip3 install "ipython[all]"
 Here I am not sure whether it is better to use `ipython[notebook]` instead (which is what the IPython dev installation instructions suggest). Kyle's Dockerfile claims that using `-e` with the `[all]` option will cause namespace conflicts.
 
 Time to install the two Python kernels!
+
 ```bash
 python2 -m IPython kernelspec install-self --system
 python3 -m IPython kernelspec install-self --system
@@ -75,6 +77,7 @@ python3 -m IPython kernelspec install-self --system
 Now you should be good to go. You can test your two IPython installations by running `iptest2` and `iptest3` from a directory other than `ipython`.
 
 Now that we have IPython working with two Python kernels, it's time to add Julia. Run Julia and update the IJulia package with `Pkg.update("IJulia")`. If no updates were needed, re-build the package with `Pkg.build("IJulia")` (this ensures IJulia is aware of your new IPython installations). The key to adding a Julia kernel to IPython is found in the contents of this [Julia kernel.json file][9]:
+
 ```json
 {
   "display_name":"Julia",
@@ -88,8 +91,10 @@ Now that we have IPython working with two Python kernels, it's time to add Julia
     "codemirror_mode":"julia"}
 ```
 Modify the julia binary path and path to `kernel.jl` to match your own paths to Julia and IJulia, respectively. Then move the `kernel.json` file to the following directory (if any of the folders don't exist, make them):
+
 ```bash
 /home/jkersulis/.ipython/kernels/julia/
+
 ```
 You should now have a Julia option in the kernel dropdown of your IPython notebook!
 
