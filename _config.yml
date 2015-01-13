@@ -16,7 +16,7 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/kersulis/kersulis.github.io
 
 pages_list:
   About: '/about'
