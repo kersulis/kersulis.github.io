@@ -31,7 +31,14 @@ end
 ```
 Recall from my [previous post][/_posts/2015-01-15-matpower-in-julia.md] that `@__FILE__` refers to the path of the file _in Julia's package directory_, not in the user's working directory. 
 
-I included the function in a new package called "MatpowerCases", which I pushed to Github.
+I included the function in a new package called "MatpowerCases", which I pushed to Github. It is now possible for anyone to load caseformat transmission network data into Julia using:
+
+```julia
+Pkg.clone("https://github.com/kersulis/MatpowerCases.jl.git")
+using MatpowerCases
+
+networkData = loadcase("case118")
+```
 
 [1]: https://github.com/mlubin
 [2]: https://github.com/simonster/MAT.jl
