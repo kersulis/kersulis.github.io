@@ -1,19 +1,19 @@
 ---
 layout: post
-title: MATPOWER Cases in Julia
+title: MATPOWER Network Data in Julia
 ---
 
 _Liberating MATPOWER caseformat data._
 
-The [MATPOWER caseformat][4] is frequently used to store power system data, but Julia (with its [GraphViz package][5]) is better suited for network visualization than MATLAB. I decided to write a Julia package to import MATPOWER caseformat data into a Julia environment.
+The [MATPOWER caseformat][4] is frequently used to store power system data, but Julia (with its [GraphViz package][5]) is better suited for network visualization than MATLAB. I decided to write a Julia package to import MATPOWER's built-in network data into a Julia environment.
 
-It is possible to run MATLAB code using Julia, but not to translate arbitrary MATLAB code. Rather than working with MATPOWER directly, I used PYPOWER, a Python port under the GPL v3 license. First, I cloned the [PYPOWER repository][1]:
+It is possible to run MATLAB code using Julia, but not to translate arbitrary MATLAB code. Rather than working with MATPOWER directly, I used PYPOWER, a Python port under the GPL v3 license. I cloned the PYPOWER repository:
 
 ```bash
 git clone --recursive https://github.com/rwl/PYPOWER
 cd PYPOWER
 ```
-Next, I copied all `.py` files pertaining to case files into a new directory:
+Next, I copied all `.py` files containing network data into a new directory. These files begin with "case", so it's easy to glob them together:
 
 ```bash
 mkdir case-only
@@ -37,11 +37,7 @@ case9.py
 case9Q.py
 caseformat.py
 ```
-I explored the files in this directory using the Jupyter notebook.
-
-<img src=/images/case9py.png width="100%" align="middle">
-
-Each `.py` file contains one function with a predictable name. [PyCall.jl][2] can import and run any of these functions. After a bit of experimentation, I came up with the following Julia module:
+Each of these Python files contains a single function with a predictable name -- piece of cake. After a bit of experimentation, I came up with the following Julia module, which uses [PyCall.jl][2] to handle the Python:
 
 ```julia
 module Power
@@ -85,6 +81,8 @@ end
 ```
 A few notes:
 
+* I am looking forward to the next Julia release, which will display the function docstring (the text between the triple double quotation marks) when the user asks for it.
+
 * One gotcha: `@pyimport` defers to Python's `sys.path`, which will not contain the folder `case-only` by default (see [this Github issue][3]). This is why I use the following lines of Julia code to prepend `sys.path` with the appropriate directory and remove it afterwards:
 
 ```julia
@@ -104,6 +102,7 @@ using Power
 case118 = loadcase("case118")
 ```
 
+The finished product gets the job done, but has a significant drawback. It is unreasonable for such a simple data import package to require its users to have Python installed. In my next post, I develop a new package called "MatpowerCases" with no non-Julia dependencies.
 
 [1]: https://github.com/rwl/PYPOWER
 [2]: https://github.com/stevengj/PyCall.jl
