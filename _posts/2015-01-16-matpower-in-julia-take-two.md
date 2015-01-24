@@ -29,7 +29,7 @@ function loadcase(caseName::ASCIIString)
     matread("$(dirname(@__FILE__))/$(caseName).mat")["networkData"]
 end
 ```
-Recall from my [previous post][/_posts/2015-01-15-matpower-in-julia.md] that `@__FILE__` refers to the path of the file _in Julia's package directory_, not in the user's working directory. 
+Recall from my [previous post](/_posts/2015-01-15-matpower-in-julia.md) that `@__FILE__` refers to the path of the file _in Julia's package directory_, not in the user's working directory. 
 
 I included the function in a new package called "MatpowerCases", which I pushed to Github. It is now possible for anyone to load caseformat transmission network data into Julia using:
 
