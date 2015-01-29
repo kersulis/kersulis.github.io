@@ -5,10 +5,8 @@ title: The Cost of an Outage
 
 Today I attended a talk whose speaker motivated his work by appealing to the cost of power outages. The figures he quoted were:
 
-* \$400b/2% of GDP -- value of US energy, one year
-* \$100b -- cost of outages in the US, one year
-
-These figures come from 
+* Value of US energy, one year: \$400b (or 2% of GDP)
+* Cost of outages in the US, one year: \$100b
 
 ## Context
 
