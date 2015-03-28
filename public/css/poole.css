@@ -362,7 +362,7 @@ tbody tr:nth-child(odd) th {
   color: #515151;
 }
 .masthead-title small {
-  font-size: 50%;
+  font-size: 65%;
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
@@ -417,9 +417,8 @@ tbody tr:nth-child(odd) th {
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
-  padding-top: 2rem;
+  padding-top: 0rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
 }
 .related-posts {
   padding-left: 0;
