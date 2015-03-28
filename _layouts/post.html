@@ -7,11 +7,17 @@ layout: default
 {% if page.color %}
 <div class="hero-color" style="background-color: {{ page.color }};"></div>
 {% endif %}
+
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
   {{ content }}
 </article>
+
+{% if page.color %}
+<div class="hero-color" style="background-color: {{ page.color }};"></div>
+{% endif %}
+
 
 <aside class="related">
   <h2>Related Posts</h2>
