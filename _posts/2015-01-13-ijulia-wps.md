@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Julia and IJulia at the Winter Power School
+color: lightslategray
 ---
 <img src=/images/wps.jpg width="400" style="float: right; width: 35%; margin-right: 1%; margin-bottom: 0.5em; margin-left: 0.5em">
 _The [Winter Power School][wps] is a recurring event sponsored by the [Center for Nonlinear Studies](http://cnls.lanl.gov) at [Los Alamos National Lab](http://lanl.gov). The goal is to teach important concepts in power and energy to a diverse group of students spanning the systems, controls, and optimization fields. The format is a three-day lecture series followed by a two-day conference with poster session._

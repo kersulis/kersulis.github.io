@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MHacks and the New Term
+color: gold
 ---
 
 The MHacks hackathon begins tomorrow evening. I plan to attend, document the first 24 hours, and use the time as an opportunity for an intense paper writing session.
