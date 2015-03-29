@@ -67,7 +67,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #0d57aa;
   text-decoration: none;
 }
 a strong {
@@ -76,7 +76,6 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  text-decoration: underline;
   color: #3399ff;
 }
 
@@ -85,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   line-height: 1.25;
   font-weight: 200;
-  color: #313131;
+  color: #555555;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -363,6 +362,11 @@ tbody tr:nth-child(odd) th {
 .masthead-title a {
   color: #515151;
 }
+
+.masthead-title a:hover {
+  color: #002a5b;
+}
+
 .masthead-title small {
   font-size: 65%;
   font-weight: 400;
@@ -397,7 +401,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #515151;
 }
 .page-title,
 .post-title {
@@ -410,6 +414,7 @@ tbody tr:nth-child(odd) th {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+  font-size: 80%;
 }
 
 /* Related posts */
@@ -435,7 +440,7 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #0d57aa;
   text-decoration: none;
 }
 .related-posts li a:hover small {

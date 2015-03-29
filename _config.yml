@@ -23,6 +23,22 @@ pages_list:
   Archive: '/archive'
   # Feed: '/atom.xml'
 
+colors:
+  UmmaTan: '#cfc096'
+  BurtonTowerBeige: '#9b9a6d'
+  TheRockGray: '#989c97'
+  ObservatoryWhite: '#e4e1df'
+  AngellHallAsh: '#a79d96'
+  LawQuadStone: '#655a52'
+  HillBrown: '#7a121c'
+  LSAOrange: '#cc6600'
+  ArchwayIvy: '#7e732f'
+  RackhamRoofGreen: '#83b2a8'
+  CanhamPoolBlue: '#587abc'
+  MatthaeiViolet: '#575294'
+
+
+
 highlighter: pygments
 
 markdown: redcarpet
