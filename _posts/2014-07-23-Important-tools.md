@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Most Important Tools
-color: midnightblue
+color: gold
 ---
 
 As a graduate student studying [the grid][tron], my life is relatively simple. People even tell me that grad school is [the prime time of your life][haa]. I do not have dozens of meetings to schedule each week, nor must I coordinate and deal with the [emotion][haa] of a large group of people. I have an [armory][tron] with more tools than most [superheroes][di] have: hardware and software are covered by the university while textbooks and necessities are covered by my ample stipend. I have no excuses; in a country like the United States and at a university like the University of Michigan, every tool [around the world][hw] is at my disposal. But in spite of all the resources, sometimes my mind still feels like a [steam machine][haa].

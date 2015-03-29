@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Cost of an Outage
+color: firebrick
 ---
 
 Today I attended a talk whose speaker motivated his work by appealing to the cost of power outages. The figures he quoted were:
