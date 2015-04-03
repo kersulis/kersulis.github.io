@@ -83,7 +83,8 @@ a:focus {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   line-height: 1.25;
-  font-weight: 200;
+  font-family: Open Sans;
+  font-weight: 400;
   color: #555555;
   text-rendering: optimizeLegibility;
 }
@@ -103,6 +104,24 @@ h3 {
 h4, h5, h6 {
   margin-top: 1rem;
   font-size: 1rem;
+}
+
+.header-link {
+  position: absolute;
+  left: -0.5em;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  -moz-transition: opacity 0.2s ease-in-out 0.1s;
+  -ms-transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
 }
 
 /* Body text */
