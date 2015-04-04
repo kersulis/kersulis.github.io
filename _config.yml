@@ -7,7 +7,7 @@ title:            Jonas Kersulis
 tagline:          Power & Energy, Python & Julia
 url:              kersulis.github.io
 paginate:         1
-baseurl:          /
+baseurl:          /~kersulis/
 author:
   name:           Jonas Kersulis
   url:            https://twitter.com/TonyKersulis
@@ -19,8 +19,8 @@ github:
   repo:           https://github.com/kersulis/kersulis.github.io
 
 pages_list:
-  About: '/about'
-  Archive: '/archive'
+  About: 'about'
+  Archive: 'archive'
   # Feed: '/atom.xml'
 
 colors:

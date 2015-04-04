@@ -2,7 +2,7 @@
 layout: default
 ---
 {% if page.image %}
-<div class="hero" style="background-image: url({{ page.image }});"></div>
+<div class="hero" style="background-image: url({{ site.baseurl }}images/{{ page.image }});"></div>
 {% endif %}
 {% if page.color %}
 <div class="hero-color" style="background-color: {{ page.color }};"></div>

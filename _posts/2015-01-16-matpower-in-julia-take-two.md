@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MATPOWER Network Data in Julia, Take Two
-image: /images/matpowercases.png
+image: matpowercases.png
 ---
 <!-- color: cornflowerblue -->
 Though my first Julia MATPOWER network data package for importing MATPOWER network data was successful, it has a significant issue. [Miles Lubin][1] pointed out that it requires Python to work. This does seem a rather silly dependency for a data import package to have. I decided to re-work the package using [MAT.jl][2].
