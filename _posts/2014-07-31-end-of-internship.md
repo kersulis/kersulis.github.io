@@ -1,7 +1,7 @@
 ---
 layout: post
 title: End of the Internship, 2014
-color: magenta
+image: losalamos.jpg
 ---
 
 Yesterday was my last workday at Los Alamos National Lab. I gave a one-hour talk, submitted reimbursement paperwork, and said goodbye to everyone I spent time with over the last ten weeks. I will miss them and the lab very much. Though it has not quite sunk in that my time at LANL is over (for now), I want to reflect on my internship. I want to understand what made it such an amazing experience, and what might have made it even better.

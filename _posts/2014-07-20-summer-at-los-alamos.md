@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Fruitful Summer at Los Alamos
-color: navy
+image: no2.jpg
 ---
 
 <!-- Today I make my first blog post in weeks. I also extend the pomodoro technique to meditation and my time with God.
