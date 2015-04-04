@@ -90,12 +90,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 150%;
-  font-weight: 250;
 }
 h2 {
   margin-top: 1rem;
   font-size: 120%;
-  font-weight: 100;
+  font-weight: 350;
 }
 h3 {
   margin-top: 1.5rem;
@@ -422,6 +421,7 @@ tbody tr:nth-child(odd) th {
 .post-title,
 .post-title a {
   color: #515151;
+  font-family: 'Open Sans';
 }
 .page-title,
 .post-title {
