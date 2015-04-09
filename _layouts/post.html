@@ -2,7 +2,9 @@
 layout: default
 ---
 {% if page.image %}
-<div class="hero" style="background-image: url({{ site.baseurl }}images/{{ page.image }});"></div>
+<div class="hero" style="background-image: url({{ site.baseurl }}images/{{ page.image }});">
+  <h1 class="post-title">{{ page.title }}</h1>
+</div>
 {% endif %}
 {% if page.color %}
 <div class="hero-color" style="background-color: {{ page.color }};"></div>
@@ -25,7 +27,7 @@ layout: default
     {% for post in site.related_posts limit:3 %}
       <li>
         <h3>
-          <a href="{{ post.url }}">
+          <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
             <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
           </a>
