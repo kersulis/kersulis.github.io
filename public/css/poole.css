@@ -261,12 +261,13 @@ div {
 .hero {
   margin: 0;
   margin-bottom: 1rem;
-  padding: 0;
+  padding: 8vh 2vmax;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 300px;
   box-shadow: inset 0 0 15px rgba(0,0,0,.5);
+  text-align: center;
 }
 
 .hero-color {
@@ -278,6 +279,20 @@ div {
   background-repeat: no-repeat;
   height: 50px;
   box-shadow: inset 0 0 15px rgba(0,0,0,.5);
+}
+
+.hero-title {
+  margin-top: 0;
+  /*padding: 7vmin 1%;*/
+  margin-left:  auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 10vh;
+  color: #fff;
+  opacity: 0.8;
+  line-height: 100%;
 }
 
 /*

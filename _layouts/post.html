@@ -3,7 +3,7 @@ layout: default
 ---
 {% if page.image %}
 <div class="hero" style="background-image: url({{ site.baseurl }}images/{{ page.image }});">
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 class="hero-title">{{ page.title }}</h1>
 </div>
 {% endif %}
 {% if page.color %}
@@ -11,7 +11,7 @@ layout: default
 {% endif %}
 
 <article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
+  <!-- <h1 class="post-title">{{ page.title }}</h1> -->
   <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
   {{ content }}
 </article>
