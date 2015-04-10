@@ -2,6 +2,7 @@
 layout: post
 title: Installing MATLAB on Ubuntu Linux
 image: MATLABdoityourself.png
+color: dodgerblue
 ---
 
 It's no secret that MATLAB focuses on Windows users. Mac gets some love, but Linux gets zero. This is how you install MATLAB R2013a on Linux.
