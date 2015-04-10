@@ -48,7 +48,8 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Crimson Text", serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 16px;
   line-height: 1.5;
 }
@@ -81,15 +82,16 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   line-height: 1.25;
   font-family: Open Sans;
-  font-weight: 400;
+  font-weight: 200;
   color: #555555;
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 150%;
+  font-size: 170%;
 }
 h2 {
   margin-top: 1rem;
@@ -261,13 +263,19 @@ div {
 .hero {
   margin: 0;
   margin-bottom: 1rem;
-  padding: 8vh 2vmax;
+  /*padding: 8vh 2vmax;*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 300px;
   box-shadow: inset 0 0 15px rgba(0,0,0,.5);
   text-align: center;
+}
+
+.title-container {
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-color {
@@ -282,17 +290,22 @@ div {
 }
 
 .hero-title {
-  margin-top: 0;
-  /*padding: 7vmin 1%;*/
   margin-left:  auto;
   margin-right: auto;
   margin-bottom: 0;
   font-family: 'Open Sans';
   font-weight: 700;
-  font-size: 10vh;
+  font-size: 60pt;
   color: #fff;
-  opacity: 0.8;
   line-height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 30pt;
+  }
 }
 
 /*
@@ -463,6 +476,7 @@ tbody tr:nth-child(odd) th {
   padding-top: 0rem;
   padding-bottom: 2rem;
 }
+
 .related-posts {
   padding-left: 0;
   list-style: none;
@@ -471,6 +485,7 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
   font-size: 110%;
 }
+
 .related-posts li small {
   font-size: 75%;
   color: #999;
