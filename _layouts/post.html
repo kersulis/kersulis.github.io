@@ -4,12 +4,9 @@ layout: default
 {% if page.image %}
 <div class="hero" style="background-image: url({{ site.baseurl }}images/{{ page.image }});">
 <div class="title-container">
-  <h1 class="hero-title">{{ page.title }}</h1>
+  <h1 class="hero-title" style="color: {{ page.color }};">{{ page.title }}</h1>
 </div>
 </div>
-{% endif %}
-{% if page.color %}
-<div class="hero-color" style="background-color: {{ page.color }};"></div>
 {% endif %}
 
 <article class="post">

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: MATPOWER Network Data in Julia
-color: aqua
+image: poles.jpg
+color: lightseagreen
 ---
 
 _Liberating MATPOWER caseformat data._
