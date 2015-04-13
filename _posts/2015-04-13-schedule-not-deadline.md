@@ -37,3 +37,7 @@ Here's what I wrote on March 12, with precious little time left to finish my con
 > At 20 hours of research per week, that’s 40 hours per step. My recent sprint shows that it’s quite possible to complete each step in 40 hours, provided the work is done in large chunks. It pays to select a “research day” for making significant progress.
 
 That's how I should have written the paper, with organization and intentionality and a schedule. Instead I wrote it with adrenaline and panic like a deadline-crazed sophomore. People called me "Don Carter" in high school. It's time I started bowling like him.
+
+___
+
+**Note:** ideas from James Clear are fresh in my mind as I write this. I think [the PDF](http://jamesclear.com/habits) is worth trading your email address for.
