@@ -2,6 +2,7 @@
 layout: post
 title: Installing IPython
 image: battlestation.jpg
+color: white
 ---
 
 > An expert is a man who has made all the mistakes which can be made, in a narrow field.

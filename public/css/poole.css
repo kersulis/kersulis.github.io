@@ -295,7 +295,7 @@ div {
   margin-bottom: 0;
   font-family: 'Open Sans';
   font-weight: 700;
-  font-size: 60pt;
+  font-size: 55pt;
   color: #fff;
   line-height: 100%;
   display: table-cell;
@@ -390,8 +390,8 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
-  padding-top:    0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top:    0.7rem;
+  padding-bottom: 0.7rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
@@ -403,7 +403,7 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 150%;
+  font-size: 140%;
   font-weight: 400;
 }
 .masthead-title a {
@@ -416,7 +416,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .masthead-title small {
-  font-size: 65%;
+  font-size: 60%;
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
@@ -460,11 +460,14 @@ tbody tr:nth-child(odd) th {
 /* Meta data line below post title */
 .post-date,
 .page-date {
-  display: block;
-  margin-top: -.5rem;
+  display: table-footer-group;
+  margin-top: -0.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 80%;
+  font-style: italic;
+  opacity: 0.7;
 }
 
 /* Related posts */
