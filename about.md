@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 
 ---
 <img src={{ site.baseurl }}images/avatar.jpg style="float: right; width: 35%; margin-right: 1%; margin-bottom: 3em; margin-left: 0.5em">
 This is the personal blog of Jonas Kersulis, a University of Michigan PhD student studying power and energy.
@@ -11,4 +11,4 @@ PhD students are paid to create. Our reputations are based on our creations, the
 
 I am currently studying the impacts of wind fluctuations on transmission networks.
 
-Follow me on [Twitter](https://twitter.com/TonyKersulis) or [Google+](https://plus.google.com/+jonaskersulis).
+Follow me on [Twitter](https://twitter.com/TonyKersulis), [Instagram](https://instagram.com/jkersulis/), or [Google+](https://plus.google.com/+jonaskersulis).
