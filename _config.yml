@@ -42,3 +42,6 @@ colors:
 highlighter: pygments
 
 markdown: redcarpet
+
+redcarpet:
+  extensions: ["with_toc_data"]

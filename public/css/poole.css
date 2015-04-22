@@ -108,8 +108,7 @@ h4, h5, h6 {
 }
 
 .header-link {
-  position: absolute;
-  left: -0.5em;
+  padding-left: 0.5em;
   opacity: 0;
 
   -webkit-transition: opacity 0.2s ease-in-out 0.1s;
@@ -405,6 +404,7 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 0;
   font-size: 140%;
   font-weight: 400;
+  display: inline-flex;
 }
 .masthead-title a {
   color: #515151;
@@ -420,6 +420,18 @@ tbody tr:nth-child(odd) th {
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+}
+
+.nav-collapse ul {
+  display: inline-flex;
+}
+
+.nav-collapse li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: right;
 }
 
 
