@@ -2,7 +2,7 @@
 layout: post
 title: Installing MATLAB on Ubuntu Linux
 image: MATLABdoityourself.png
-color: dodgerblue
+color: white
 ---
 
 It's no secret that MATLAB focuses on Windows users. Mac gets some love, but Linux gets zero. This is how you install MATLAB R2013a on Linux.
@@ -41,16 +41,16 @@ It took forever. I need to get MATLAB working on the Ubuntu side.
 
 **Step 15:**  Launch installer. Accept license agreement. Tell installer it's okay to create `/usr/local/MATLAB/R2013a_Student` and put MATLAB there. See error:  "Failed to create folder (/usr/local/MATLAB/R2013a_Student/)." Guess I need to re-run the installer with sudo privilege?
 
-**Step 16:**  Run installer using `sudo ./install` in 
+**Step 16:**  Run installer using `sudo ./install` in
 
 ```
 /tmp/mathworks_downloads/R2013a_Student_Version
-``` 
+```
 Accept license agreement again. This time the installer is able to make a new folder. Hallelujah.
 
 **Step 17:**  Tell installer to create symbolic links in `usr/local/bin`. Confirm all my elections thus far. Depending on how long this takes I may need to cancel. One does not simply skip a pasta dinner.
 
-**Step 18:**  See activation window, which tells me to enter a serial number and email. Go to My Account on mathworks.com, download license file, copy into 
+**Step 18:**  See activation window, which tells me to enter a serial number and email. Go to My Account on mathworks.com, download license file, copy into
 
 ```
 /usr/local/MATLAB/R2013a_Student/licenses

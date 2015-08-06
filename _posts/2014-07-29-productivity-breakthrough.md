@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Productivity Breakthrough
-color: orangered
+image: stop.jpg
+color: white
 ---
 
-I have been trying for many months to increase my productivity. My philosophy has long been that one ought to ivest a significant portion of one's time developing shortcuts to save time later. For me, these shortcuts are typically life hacks or software tricks. They either 
+I have been trying for many months to increase my productivity. My philosophy has long been that one ought to ivest a significant portion of one's time developing shortcuts to save time later. For me, these shortcuts are typically life hacks or software tricks. They either
 
-1. make life simpler to reduce everyday cognitive burden, or 
+1. make life simpler to reduce everyday cognitive burden, or
 2. dramatically reduce the time neccessary to complete some task at the cost of a relatively small increase in complexity.
 
 I have already found shortcuts for working on the computer, for writing and blogging, and for reading. But the shortcut that has been in the forefront of my mind for months now is productivity itself:  increased productivity will enable me to get more done each day regardless of the other shortcuts I have developed. Fortunately (read: unfortunately), there is no shortage of productivity advice on the internet. Hundreds of websites and books and tweets claim to contain productivity "secrets". Were I to reproduce the various tidbits of wisdom I have found, this post would be longer than a Justin Bieber flame war on YouTube.

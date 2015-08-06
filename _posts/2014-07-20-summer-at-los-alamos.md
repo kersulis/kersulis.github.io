@@ -2,11 +2,9 @@
 layout: post
 title: A Fruitful Summer at Los Alamos
 image: no2.jpg
-color: DarkOrange
+color: white
 ---
 
-<!-- Today I make my first blog post in weeks. I also extend the pomodoro technique to meditation and my time with God.
- -->
 This summer I transformed the way I get things done. A key part of the process was exposing myself to a variety of software tools and productivity hacks.
 
 * The pomodoro technique has given me a new way to keep track of my time and quantify my productivity. When I get to work each day, I begin my first 25-minute pomodoro and attempt to squeeze in as many as I can around meetings and other distractions. Every pomodoro and distraction is noted in a Google spreadsheet I use to track myself. The technique yields both active and passive benefits:  I am more inclined to compete against myself now that my performance is measured, and I can see bad habits as patterns in the spreadsheet data.

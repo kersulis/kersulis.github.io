@@ -2,7 +2,7 @@
 layout: post
 title: Morning Routine
 image: morning.jpg
-color: firebrick
+color: white
 ---
 
 My new night routine has improved my life. I no longer stare at screens until 1 AM. I am, however, messing up the mornings. I get up too late and am vulnerable to negative thoughts from the start. I need a new morning routine.

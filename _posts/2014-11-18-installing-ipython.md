@@ -8,15 +8,9 @@ color: white
 > An expert is a man who has made all the mistakes which can be made, in a narrow field.
 ~ Niels Bohr
 
-#I am now an expert at installing IPython.
+# I am now an expert at installing IPython.
 
-<!-- This past summer I had an internship at LANL, and I decided to re-tool. I replaced every computing utility I assumed was great with one that was actually great. I moved from Windows to Ubuntu. I installed Julia to replace MATLAB's technical computing capabilities. Instead of using AMPL for my optimization research work, I installed the JuMP Julia package (whose author sat at the desk next to mine). Throughout this turbulent time, two pieces of software continually assured me that I was doing the right thing by switching: Ubuntu and IPython.
-
-The IPython notebook revolutionized my research work. Instead of developing scripts in MATLAB and passing data somewhere else to plot network graphs, I could use [NetworkX][1] and [GraphViz][2] to generate a crisp, beautiful SVG and display it inline. With IPython, it became dead simple to document my work with Markdown rather than creating LaTeX documents, or worse, using MS Word. I build up a significant amount of Julia research code, and spent most of each day in an IJulia notebook. When my internship came to an end, I set work aside and spent a month with my family.
-
-When fall came around, I decided to continue applying what I had learned about IPython to my new set of classes. My signal processing professor wanted to write an interactive textbook that stood above the rest. I recommended that we create a set of IPython notebooks to accomplish the task. Awesome examples like [numerical-mooc][3] show how easy it is to do this. -->
-
-Recently I returned to the IPython notebook to pick up research and textbook writing. Knowing the current stable version would be obsolete by the time my textbook could be deployed, I switched to the [development version][4]. Well, at least I *tried* to switch to the development version. I followed the installation instructions, but couldn't get the IJulia profile to work. Because I rely on Julia for my research, this is no good. I re-built the IJulia package [as the developer suggests][11], but nothing happened. I spent all afternoon today trying to simultaneously figure out what was wrong and somehow get my IPython installation to match the [uber-notebook][6] [Kyle Kelley][5] put on tmpnb.
+Recently I returned to the IPython notebook to pick up research and textbook writing. Knowing the current stable version would be obsolete by the time the textbook could be deployed, I switched to the [development version][4]. Well, at least I *tried* to switch to the development version. I followed the installation instructions, but couldn't get the IJulia profile to work. Because I rely on Julia for my research, this is no good. I re-built the IJulia package [as the developer suggests][11], but nothing happened. I spent all afternoon today trying to simultaneously figure out what was wrong and somehow get my IPython installation to match the [uber-notebook][6] [Kyle Kelley][5] put on tmpnb.
 
 I finally figured it out. The key was to dig into [the][7] [Dockerfiles ][8] used to build tmpnb. I want to share what I learned in hopes that it will help others in my situation (all two of them).
 

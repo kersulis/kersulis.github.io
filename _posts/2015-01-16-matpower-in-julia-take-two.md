@@ -4,10 +4,10 @@ title: MATPOWER Network Data in Julia, Take Two
 image: santafesky.jpg
 color: white
 ---
-<!-- color: cornflowerblue -->
+
 Though my first Julia MATPOWER network data package for importing MATPOWER network data was successful, it has a significant issue. [Miles Lubin][1] pointed out that it requires Python to work. This does seem a rather silly dependency for a data import package to have. I decided to re-work the package using [MAT.jl][2].
 
-## MATLAB side 
+## MATLAB side
 
 I copied all caseformat `.m` files from [MATPOWER][3] into a new directory:
 
@@ -31,7 +31,7 @@ function loadcase(caseName::ASCIIString)
     matread("$(dirname(@__FILE__))/$(caseName).mat")["networkData"]
 end
 ```
-Recall from my [previous post]({{ site.baseurl }}2015/01/15/matpower-in-julia) that `@__FILE__` refers to the path of the file _in Julia's package directory_, not in the user's working directory. 
+Recall from my [previous post]({{ site.baseurl }}2015/01/15/matpower-in-julia) that `@__FILE__` refers to the path of the file _in Julia's package directory_, not in the user's working directory.
 
 I included the function in a new package called "MatpowerCases", which I pushed to Github. It is now possible for anyone to load caseformat transmission network data into Julia using:
 
