@@ -2,7 +2,7 @@
 layout: post
 title: Schedule Not Deadline
 image: bowling.jpg
-color: white
+color: "#43302c"
 ---
 
 I want to be the kind of person who

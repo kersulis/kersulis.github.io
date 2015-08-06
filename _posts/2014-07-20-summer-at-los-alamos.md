@@ -2,7 +2,7 @@
 layout: post
 title: A Fruitful Summer at Los Alamos
 image: no2.jpg
-color: white
+color: "#594d23"
 ---
 
 This summer I transformed the way I get things done. A key part of the process was exposing myself to a variety of software tools and productivity hacks.

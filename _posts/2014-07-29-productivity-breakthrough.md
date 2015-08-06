@@ -2,7 +2,7 @@
 layout: post
 title: Productivity Breakthrough
 image: stop.jpg
-color: white
+color: "#5c956d"
 ---
 
 I have been trying for many months to increase my productivity. My philosophy has long been that one ought to ivest a significant portion of one's time developing shortcuts to save time later. For me, these shortcuts are typically life hacks or software tricks. They either

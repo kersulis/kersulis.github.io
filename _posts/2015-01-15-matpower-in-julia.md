@@ -2,7 +2,7 @@
 layout: post
 title: MATPOWER Network Data in Julia
 image: poles.jpg
-color: lightseagreen
+color: "#8b8587"
 ---
 
 _Liberating MATPOWER caseformat data._
@@ -49,7 +49,7 @@ export loadcase
 
 function loadcase(caseName::ASCIIString)
     """
-    Return a Dict containing power system data 
+    Return a Dict containing power system data
     in MATPOWER's format. Valid cases:
     case118
     case118
