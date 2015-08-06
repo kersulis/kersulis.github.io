@@ -1172,7 +1172,7 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -1188,7 +1188,7 @@ h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-}
+}*/
 h1 small,
 h2 small,
 h3 small,
