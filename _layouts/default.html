@@ -22,7 +22,7 @@
       {% if page.image %}
       <div class="hero" style="background-image: url({{ site.baseurl }}images/{{ page.image }});">
       <div class="title-container">
-        <h1 class="hero-title" style="color: {{ page.color }};">{{ page.title }}</h1>
+        <h1 class="hero-title">{{ page.title }}</h1>
         {% if page.date %}
         <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date" style="color: {{ page.color }};">{{ page.date | date_to_string }}</time>
         {% endif %}
@@ -34,10 +34,6 @@
         {{ content }}
       </main>
 
-      {% if page.color %}
-      <div class="hero-color" style="background-color: {{ page.color }};"></div>
-      {% endif %}
-
       <footer class="footer">
         <small>
           &copy;
@@ -46,7 +42,9 @@
           {% endif %} All rights reserved.
         </small>
       </footer>
-    </div>
+        {% if page.color %}
+        <div class="hero-color" style="background-color: {{ page.color }};"></div>
+        {% endif %}
 
 <!-- Add deep linking -->
   <script>
