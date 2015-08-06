@@ -1,22 +1,33 @@
 ---
 layout: default
 title: Home
+color: white
 ---
 <div class="hero" style="background-image: url({{ site.baseurl }}images/turbineLandscape.jpg); background-color: {{ site.colors.CanhamPoolBlue }};"></div>
+
 <div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url | remove_first:'/' }}">
+{% for post in paginator.posts %}
+{% if post.image %}
+<div class="post-preview preview-hero" style="background-image: url({{ site.baseurl }}images/{{ post.image }});">
+{% else %}
+<div class="post-preview">
+{% endif %}
+<div class="preview-container">
+    <h2 class="preview-title">
+      <a class="preview-link" style="color: {{ post.color }}" href="{{ site.baseurl }}{{ post.url | remove_first:'/' }}">
         {{ post.title }}
       </a>
-    </h1>
+    </h2>
+    {% if post.subtitle %}
+    <h3 class="post-subtitle">
+        {{ post.subtitle }}
+    </h3>
+    {% endif %}
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="page-date">{{ post.date | date_to_string }}</time>
+</div>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
+</div>
+{% endfor %}
 </div>
 
 <div class="pagination">
