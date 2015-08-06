@@ -6,7 +6,7 @@ relative_permalinks: true
 title:            Jonas Kersulis
 tagline:          Power & Energy, Python & Julia
 url:              kersulis.github.io
-paginate:         1
+paginate:         4
 baseurl:          /
 author:
   name:           Jonas Kersulis
@@ -20,7 +20,7 @@ github:
 
 pages_list:
   About: 'about'
-  Archive: 'archive'
+  # Archive: 'archive'
   # Feed: '/atom.xml'
 
 colors:
