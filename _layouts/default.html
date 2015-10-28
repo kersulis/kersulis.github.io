@@ -17,12 +17,15 @@
         </h3>
       </header>
 
+      <div class="white-space">
+      </div>
+
       {% if page.image %}
       <div class="hero" style="background-image: url({{ site.baseurl }}images/{{ page.image }});">
       <div class="title-container">
         <h1 class="hero-title">{{ page.title }}</h1>
         {% if page.date %}
-        <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date" style="color: {{ page.color }};">{{ page.date | date_to_string }}</time>
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date" style="color: {{ site.colors.Blue }};">{{ page.date | date_to_string }}</time>
         {% endif %}
       </div>
       </div>
@@ -41,7 +44,7 @@
         </small>
       </footer>
         {% if page.color %}
-        <div class="hero-color" style="background-color: {{ page.color }};"></div>
+        <div class="hero-color" style="background-color: {{ site.colors.Blue }};"></div>
         {% endif %}
   </body>
 </html>
