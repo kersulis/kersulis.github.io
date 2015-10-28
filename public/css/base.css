@@ -62,7 +62,7 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  color: #3399ff;
+  color: #FFCC33;
 }
 
 /* Headings */
@@ -247,7 +247,7 @@ div {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #515151;
+    background-color: #003366;
     height: 150px;
     box-shadow: inset 0 0 15px rgba(0,0,0,.5);
     text-align: center;
@@ -269,13 +269,6 @@ div {
 .preview-link {
     color: white;
 }
-
-.preview-title > a:hover,
-.preview-title > a:focus {
-  text-decoration: none;
-  color: #ddd;
-}
-
 .preview-container {
     display: table;
     height: 100%;
@@ -290,12 +283,11 @@ div {
 
 .hero-color {
   margin: 0;
-  /*margin-bottom: 1rem;*/
   padding: 0;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 50px;
+  height: 2rem;
   box-shadow: inset 0 0 15px rgba(0,0,0,.5);
 }
 
@@ -366,11 +358,13 @@ tbody tr:nth-child(odd) th {
 .masthead {
   padding-top:    0.5rem;
   padding-bottom: 0.5rem;
-  margin-top: 0rem;
+  top: 0;
   margin-bottom: 0rem;
   position: fixed;
   background-color: #003366;
   width: 100%;
+  height: 2rem;
+  z-index: 100;
 }
 .masthead-title {
   max-width: 38rem;
@@ -381,7 +375,7 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 100%;
-  font-weight: 500;
+  font-weight: 600;
 }
 .masthead-title a {
   color: white;
@@ -399,6 +393,9 @@ tbody tr:nth-child(odd) th {
   color: #c0c0c0;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+.white-space {
+    height: 2rem;
 }
 
 /*
