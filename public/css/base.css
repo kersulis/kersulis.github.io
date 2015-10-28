@@ -91,7 +91,7 @@ h2 post-title {
 }
 h3 {
   margin-top: 1.5rem;
-  font-size: 110%;
+  font-size: 100%;
 }
 h4, h5, h6 {
   margin-top: 1rem;
@@ -444,7 +444,7 @@ tbody tr:nth-child(odd) th {
 /* Related posts */
 .related {
   font-family:  'Open Sans';
-  font-weight: 700;
+  /*font-weight: 600;*/
   font-size: 100%;
   max-width: 38rem;
   padding-left:  1rem;
@@ -460,21 +460,11 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts h3 {
   margin-top: 0;
-  font-weight: 700;
+  font-weight: 600;
   color: black;
-  font-size: 100%;
+  font-size: 90%;
 }
 
-.related-posts a {
-  color: #666
-}
-.related-posts li a:hover {
-  color: #555;
-  text-decoration: none;
-}
-.related-posts li a:hover small {
-  color: inherit;
-}
 .related-posts small {
     font-size: 50%;
     vertical-align: middle;
