@@ -43,12 +43,12 @@ z_1^\top C z_1 - 2b^\top z_1 &< z_2^\top C z_2 - 2b^\top z_2
 </p>
 
 ## Proof
-Multiply \eqref{eq:first1} by $z\_1^\top$ and $z\_2^\top$ for both $z\_1$ and $z\_2$:
+Multiply \eqref{eq:first1} by $z\_1^\top$ and $z\_2^\top$ for both $z\_1$ and $z\_2$, using \eqref{eq:first2} to replace instances of $z\_1^\top z\_1$ or $z\_2^\top z\_2$ by $s^2$:
 
 <p>
 \begin{align}
-\label{eq:2a}z_1^\top C z_1 &= \lambda_1z_1^\top z_1 + z_1^\top b = \lambda_1 s^2 + z_1^\top b \\
-\label{eq:2b}z_2^\top C z_2 &= \lambda_2z_2^\top z_2 + z_2^\top b = \lambda_2 s^2 + z_2^\top b \\
+\label{eq:2a}z_1^\top C z_1 &= \lambda_1 s^2 + z_1^\top b \\
+\label{eq:2b}z_2^\top C z_2 &= \lambda_2 s^2 + z_2^\top b \\
 \label{eq:2c}z_1^\top C z_2 &= \lambda_2z_1^\top z_2 + b^\top z_1 \\
 \label{eq:2d}z_2^\top C z_1 &= \lambda_1z_2^\top z_1 + b^\top z_2 \end{align}
 </p>
