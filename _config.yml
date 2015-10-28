@@ -36,6 +36,7 @@ colors:
   RackhamRoofGreen: '#83b2a8'
   CanhamPoolBlue: '#587abc'
   MatthaeiViolet: '#575294'
+  Blue: '#003366'
 
 highlighter: pygments
 markdown: redcarpet
