@@ -49,9 +49,8 @@ Multiply \eqref{eq:first1} by $z\_1^\top$ and $z\_2^\top$ for both $z\_1$ and $z
 \begin{align}
 \label{eq:2a}z_1^\top C z_1 &= \lambda_1z_1^\top z_1 + z_1^\top b = \lambda_1 s^2 + z_1^\top b \\
 \label{eq:2b}z_2^\top C z_2 &= \lambda_2z_2^\top z_2 + z_2^\top b = \lambda_2 s^2 + z_2^\top b \\
-\label{eq:2c}z_1^\top C z_2 &= \lambda_2z_1^\top z_2 + z_1^\top b \\
-\label{eq:2d}z_2^\top C z_1 &= \lambda_1z_2^\top z_1 + z_2^\top b
-\end{align}
+\label{eq:2c}z_1^\top C z_2 &= \lambda_2z_1^\top z_2 + b^\top z_1 \\
+\label{eq:2d}z_2^\top C z_1 &= \lambda_1z_2^\top z_1 + b^\top z_2 \end{align}
 </p>
 
 Subtract \eqref{eq:2b} from \eqref{eq:2a}:
@@ -62,19 +61,20 @@ Subtract \eqref{eq:2b} from \eqref{eq:2a}:
 \end{align*}
 </p>
 
-Add $z\_2^\top b$ and subtract $z\_1^\top b$:
+Add $b^\top z\_2$ and subtract $b^\top z\_1$:
 
 <p>
 \begin{align*}
-(z_1^\top C z_1 - 2z_1^\top b) - (z_2^\top C z_2 - 2z_2^\top b) &= (\lambda_1 - \lambda_2)s^2 - z_1^\top b + z_2^\top b
+O(z_1) - O(z_2) &= (\lambda_1 - \lambda_2)s^2 - z_1^\top b + z_2^\top b
 \end{align*}
 </p>
+where $$O(z)=z^\top C z - 2b^\top z$$ is the objective value corresponding to $z$.
 
 Substitute \eqref{eq:2c} and \eqref{eq:2d}:
 
 <p>
 \begin{align*}
-(z_1^\top C z_1 - 2z_1^\top b) - (z_2^\top C z_2 - 2z_2^\top b) &= (\lambda_1 - \lambda_2)s^2 + (\lambda_2 - \lambda_1) z_1^\top z_2 \\
+O(z_1) - O(z_2) &= (\lambda_1 - \lambda_2)s^2 + (\lambda_2 - \lambda_1) z_1^\top z_2 \\
 &=  (\lambda_1 - \lambda_2)(s^2 - z_1^\top z_2)
 \end{align*}
 </p>
@@ -83,11 +83,11 @@ Note that $$\lVert z\_1 - z\_2 \rVert = z\_1^\top z\_1 + z\_2^\top z\_2 - 2z\_1^
 
 <p>
 \begin{align*}
-(z_1^\top C z_1 - 2z_1^\top b) - (z_2^\top C z_2 - 2z_2^\top b) &= \frac{1}{2}(\lambda_1 - \lambda_2)\lVert z_1 - z_2 \rVert
+O(z_1) - O(z_2) &= \frac{1}{2}(\lambda_1 - \lambda_2)\lVert z_1 - z_2 \rVert
 \end{align*}
 </p>
 
-Because $\lambda\_1 < \lambda\_2$, the right-hand size is negative. The objective value corresponding to $(\lambda\_1,z\_1)$ is therefore less than that of $(\lambda\_2,z\_2)$.
+Because $\lambda\_1 < \lambda\_2$, the right-hand size is negative. The objective value corresponding to $z\_1$ is therefore less than that of $z\_2$.
 
 ## Significance
 Knowing that the smallest value of $\lambda$ that satisfies the first-order conditions yields the optimal solution for $(P)$ means we can ignore all other solutions. Obtaining all solutions means solving the slippery secular equation, which looks something like this:
