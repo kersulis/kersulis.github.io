@@ -363,7 +363,7 @@ tbody tr:nth-child(odd) th {
   position: fixed;
   background-color: #003366;
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   z-index: 100;
 }
 .masthead-title {
@@ -395,7 +395,7 @@ tbody tr:nth-child(odd) th {
   text-transform: uppercase;
 }
 .white-space {
-    height: 2rem;
+    height: 2.5rem;
 }
 
 /*
