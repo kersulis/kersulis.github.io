@@ -8,9 +8,9 @@ color: "#003366"
 <div class="posts">
 {% for post in paginator.posts %}
 {% if post.image %}
-<div class="post-preview preview-hero" style="background-image: url({{ site.baseurl }}images/{{ post.image }});">
+<div class="preview-hero" style="background-image: url({{ site.baseurl }}images/{{ post.image }});">
 {% else %}
-<div class="post-preview">
+<div class="preview-hero">
 {% endif %}
 <div class="preview-container">
     <h2 class="preview-title">
