@@ -5,7 +5,7 @@
 
   <body>
 
-    <!-- <div class="container content">
+    <div class="container content">
       <header class="masthead">
         <h3 class="masthead-title">
           <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
@@ -15,9 +15,7 @@
             <small><a href="{{ site.baseurl }}{{ page[1] }}">{{ page[0] }}</a></small>
           {% endfor %}
         </h3>
-      </header> -->
-
-      {% include nav.html %}
+      </header>
 
       {% if page.image %}
       <div class="hero" style="background-image: url({{ site.baseurl }}images/{{ page.image }});">
@@ -45,22 +43,5 @@
         {% if page.color %}
         <div class="hero-color" style="background-color: {{ page.color }};"></div>
         {% endif %}
-
-<!-- Add deep linking -->
-  <script>
-  $(function() {
-    return $("h2, h3, h4, h5, h6").each(function(i, el) {
-      var $el, icon, id;
-      $el=  $(el);
-      id = $el.attr('id');
-      icon = '<i class="fa fa-link"></i>';
-      if (id) {
-        return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
-      }
-    });
-  });
-  </script>
-
-
   </body>
 </html>

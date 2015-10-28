@@ -37,8 +37,5 @@ colors:
   CanhamPoolBlue: '#587abc'
   MatthaeiViolet: '#575294'
 
-
-
 highlighter: pygments
-
 markdown: redcarpet

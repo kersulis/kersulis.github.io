@@ -1,36 +1,21 @@
 /*
- *                        ___
- *                       /\_ \
- *  _____     ___     ___\//\ \      __
- * /\ '__`\  / __`\  / __`\\ \ \   /'__`\
- * \ \ \_\ \/\ \_\ \/\ \_\ \\_\ \_/\  __/
- *  \ \ ,__/\ \____/\ \____//\____\ \____\
- *   \ \ \/  \/___/  \/___/ \/____/\/____/
- *    \ \_\
- *     \/_/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/poole.
+ Jonas Kersulis
+
+ Original style sheet released under MIT license by @mdo. Learn more at https://github.com/poole/poole.
+
+ Contents
+
+ Body resets
+ Custom type
+ Messages
+ Container
+ Masthead
+ Posts and pages
+ Pagination
  */
 
-
 /*
- * Contents
- *
- * Body resets
- * Custom type
- * Messages
- * Container
- * Masthead
- * Posts and pages
- * Pagination
- * Reverse layout
- * Themes
- */
-
-
-/*
- * Body resets
+ * Body presets
  *
  * Update the foundational and global aspects of the page.
  */
@@ -98,14 +83,12 @@ h2 {
   font-size: 120%;
   font-weight: 350;
 }
-
 h2 post-title {
     margin-bottom: 0;
     line-height: 100%;
     display: table-cell;
     vertical-align: middle;
 }
-
 h3 {
   margin-top: 1.5rem;
   font-size: 110%;
@@ -113,24 +96,6 @@ h3 {
 h4, h5, h6 {
   margin-top: 1rem;
   font-size: 1rem;
-}
-
-.header-link {
-  position: absolute;
-  left: -0.5em;
-  opacity: 0;
-
-  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
-  -moz-transition: opacity 0.2s ease-in-out 0.1s;
-  -ms-transition: opacity 0.2s ease-in-out 0.1s;
-}
-
-h2:hover .header-link,
-h3:hover .header-link,
-h4:hover .header-link,
-h5:hover .header-link,
-h6:hover .header-link {
-  opacity: 1;
 }
 
 /* Body text */
@@ -142,7 +107,6 @@ p {
 strong {
   color: #303030;
 }
-
 
 /* Lists */
 ul, ol, dl {
@@ -178,9 +142,12 @@ abbr[title] {
 }
 
 /* Code */
-code,
-pre {
+pre code {
   font-family: Menlo, Monaco, "Courier New", monospace;
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
 }
 code {
   padding: .25em .5em;
@@ -201,12 +168,6 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   background-color: #f9f9f9;
-}
-pre code {
-  padding: 0;
-  font-size: 100%;
-  color: inherit;
-  background-color: transparent;
 }
 
 /* Pygments via Jekyll */
@@ -357,14 +318,6 @@ div {
   }
 }
 
-/*
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1rem;
-  border-radius: 5px;
-}
-*/
 /* Tables */
 table {
   margin-bottom: 1rem;
@@ -382,7 +335,6 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 
-
 /*
  * Custom type
  *
@@ -394,37 +346,11 @@ tbody tr:nth-child(odd) th {
   font-weight: 300;
 }
 
-
-/*
- * Messages
- *
- * Show alert messages to users. You may add it to single elements like a `<p>`,
- * or to a parent if there are multiple elements to show.
- */
-
-.message {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9;
-}
-
-
 /*
  * Container
  *
  * Center the page content.
  */
-
-/*
-.container {
-  max-width: 38rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
-}
-*/
 
 .container {
   padding: 0;
@@ -438,10 +364,13 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
-  padding-top:    0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top:    0.5rem;
+  padding-bottom: 0.5rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
+  position: fixed;
+  background-color: #003366;
+  width: 100%;
 }
 .masthead-title {
   max-width: 38rem;
@@ -452,17 +381,18 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 100%;
-  font-weight: 400;
+  font-weight: 500;
 }
 .masthead-title a {
-  color: #515151;
+  color: white;
   font-family: 'Open Sans'
 }
-
-.masthead-title a:hover {
-  color: #002a5b;
+.masthead-title small {
+    float: right;
 }
-
+.masthead-title a:hover {
+  color: #FFCC33;
+}
 .masthead-title-pagelist {
   font-size: 60%;
   font-weight: 400;
@@ -471,19 +401,12 @@ tbody tr:nth-child(odd) th {
   text-transform: uppercase;
 }
 
-
 /*
  * Posts and pages
  *
  * Each post is wrapped in `.post` and is used on default and post layouts. Each
  * page is wrapped in `.page` and is only used on the page layout.
  */
-
-/*.page,
-.post {
-  margin-bottom: 4em;
-}*/
-
 .page,
 .post,
 .posts {
@@ -534,20 +457,18 @@ tbody tr:nth-child(odd) th {
   padding-top: 0rem;
   padding-bottom: 2rem;
 }
-
 .related-posts {
   padding-left: 0;
   list-style: none;
 }
 .related-posts h3 {
   margin-top: 0;
-  font-weight: 800;
+  font-weight: 700;
   color: black;
-  /*font-size: 110%;*/
+  font-size: 100%;
 }
 
 .related-posts a {
-  /*font-size: 75%;*/
   color: #666
 }
 .related-posts li a:hover {
@@ -556,6 +477,10 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li a:hover small {
   color: inherit;
+}
+.related-posts small {
+    font-size: 50%;
+    vertical-align: middle;
 }
 
 .footer {
