@@ -51,6 +51,13 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
+main {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */      
+}
+
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
   color: #0d57aa;
@@ -139,6 +146,40 @@ abbr {
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
+}
+
+/* Fade-in animation */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Code */
