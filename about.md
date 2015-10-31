@@ -3,7 +3,7 @@ layout: page
 title: About
 image: riogrande.jpg
 ---
-<img src={{ site.baseurl }}images/avatar.jpg style="float: right; width: 35%; margin-right: 1%; margin-bottom: 3em; margin-left: 0.5em">
+<img src="{{ site.baseurl }}images/avatar.jpg" style="float: right; width: 35%; margin-right: 1%; margin-bottom: 3em; margin-left: 0.5em">
 This is the personal blog of Jonas Kersulis, a University of Michigan PhD student studying power and energy.
 
 I love explaining and have a passion for visualization.
