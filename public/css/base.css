@@ -38,11 +38,11 @@ html {
   font-size: 18px;
   line-height: 1.5;
 }
-@media (min-width: 38em) {
+/*@media (min-width: 38em) {
   html {
     font-size: 23px;
   }
-}
+}*/
 
 body {
   color: #515151;
