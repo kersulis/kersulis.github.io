@@ -1,6 +1,5 @@
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Jonas Kersulis
@@ -11,12 +10,7 @@ baseurl:          /
 author:
   name:           Jonas Kersulis
   url:            https://twitter.com/TonyKersulis
-  email:          jonas.kersulis@gmail.com
-
-# Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/kersulis/kersulis.github.io
+  email:          kersulis@umich.edu
 
 pages_list:
   About: 'about'
@@ -38,5 +32,8 @@ colors:
   MatthaeiViolet: '#575294'
   Blue: '#003366'
 
-highlighter: pygments
-markdown: redcarpet
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+gems: [jekyll-paginate, jekyll-gist]
