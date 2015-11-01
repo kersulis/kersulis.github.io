@@ -4,8 +4,12 @@
   {% include head.html %}
 
   <body>
-
+  {% if page.title == "Home" %}
+    <div class="container content" style="background-image: url({{ site.baseurl }}images/turbineLandscape.jpg); background-position: center bottom;">
+  {% else %}
     <div class="container content">
+  {% endif %}
+
       <header class="masthead">
         <h3 class="masthead-title">
           <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
@@ -43,8 +47,8 @@
           {% endif %} All rights reserved.
         </small>
       </footer>
-        {% if page.color %}
-        <div class="hero-color" style="background-color: {{ site.colors.Blue }};"></div>
-        {% endif %}
+      {% if page.title != "Home" %}
+      <div class="hero-color" style="background-color: {{ site.colors.Blue }};"></div>
+      {% endif %}
   </body>
 </html>

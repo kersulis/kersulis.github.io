@@ -30,6 +30,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 html {
@@ -55,7 +56,7 @@ main {
   animation: fadein 1s;
   -moz-animation: fadein 1s; /* Firefox */
   -webkit-animation: fadein 1s; /* Safari and Chrome */
-  -o-animation: fadein 1s; /* Opera */      
+  -o-animation: fadein 1s; /* Opera */
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
@@ -152,9 +153,13 @@ abbr[title] {
 @keyframes fadein {
     from {
         opacity:0;
+        /*background: rgb(0, 51, 102);*/
+        /*background: rgba(0, 51, 102, .5);*/
+}
     }
     to {
         opacity:1;
+        /*background: rgb(255,255,255);*/
     }
 }
 @-moz-keyframes fadein { /* Firefox */
@@ -285,11 +290,12 @@ div {
 .preview-hero {
     margin: 0;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #003366;
-    height: 150px;
+    background-color: rgba(0, 51, 102, .3);
+    height: 135px;
     box-shadow: inset 0 0 15px rgba(0,0,0,.5);
     text-align: center;
 }
@@ -388,6 +394,7 @@ tbody tr:nth-child(odd) th {
 .container {
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 /*
@@ -516,6 +523,9 @@ tbody tr:nth-child(odd) th {
   margin-left: auto;
 }
 
+.footer small {
+    color: #ccc;
+}
 /*
  * Pagination
  *
@@ -539,10 +549,16 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
+  background-color: #003366;
+  color: white;
+  font-weight: 600;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
+}
+.pagination-item span {
+    background-color: black;
 }
 
 /* Only provide a hover state for linked pagination items */
