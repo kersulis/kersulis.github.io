@@ -3,12 +3,12 @@
 
   {% include head.html %}
 
-  <body>
   {% if page.title == "Home" %}
-    <div class="container content" style="background-image: url({{ site.baseurl }}images/turbineLandscape.jpg); background-position: center bottom;">
+  <body style="background-image: url({{ site.baseurl }}images/turbineLandscape.jpg); background-position: center center; background-repeat: no-repeat;">
   {% else %}
-    <div class="container content">
+  <body>
   {% endif %}
+    <div class="container content">
 
       <header class="masthead">
         <h3 class="masthead-title">
