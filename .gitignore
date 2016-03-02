@@ -14,6 +14,7 @@ _site
 *.zip
 *.vi
 *~
+tags
 
 # OS or Editor folders
 .DS_Store
@@ -36,5 +37,4 @@ validation-report.json
 # Folders to ignore
 node_modules
 _draftsPrivate
-# _drafts
 _drafts
