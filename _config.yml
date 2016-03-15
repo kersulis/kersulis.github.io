@@ -5,7 +5,7 @@ permalink:        pretty
 title:            Jonas Kersulis
 tagline:          Power & Energy, Python & Julia
 url:              kersulis.github.io
-paginate:         4
+paginate:         10
 baseurl:          /
 author:
   name:           Jonas Kersulis
