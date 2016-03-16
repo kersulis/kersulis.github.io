@@ -297,10 +297,11 @@ div {
 
 @media (max-width: 40em) {
   .preview-title {
-      font-size: 70%;
+      font-size: 80%;
   }
   .page-date {
       font-size: 60%;
+      display: none;
   }
 }
 
@@ -482,13 +483,11 @@ tbody tr:nth-child(odd) th {
   margin-top: 1rem;
   font-style: italic;
   color: white;
-  opacity: 0.7;
 }
 
 /* Related posts */
 .related {
   font-family:  'Open Sans';
-  /*font-weight: 600;*/
   font-size: 100%;
   max-width: 38rem;
   padding-left:  1rem;
@@ -531,8 +530,6 @@ tbody tr:nth-child(odd) th {
 
 .pagination {
   overflow: hidden; /* clearfix */
-  padding-left:  40%;
-  padding-right: 40%;
   margin-left: auto;
   margin-right: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -547,23 +544,27 @@ tbody tr:nth-child(odd) th {
 /* Pagination items can be `span`s or `a`s */
 .pagination-item {
   display: block;
-  padding: 0.3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
   background-color: #003366;
   color: white;
   font-weight: 600;
   width: 50%;
+  height: 2.5rem;
   float: left;
+  z-index: 100;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
-span.pagination-item {
-    background-color: #ccc;
-    opacity: 0.5;
+
+.older {
+    text-align: right;
 }
 
-/* Only provide a hover state for linked pagination items */
-a.pagination-item:hover {
-  background-color: #f5f5f5;
+.newer {
+    text-align: left;
 }
 
