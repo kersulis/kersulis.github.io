@@ -292,12 +292,12 @@ div {
 
 .preview-hero {
     background-color: rgba(0, 51, 102, .3);
-    height: 60px;
+    height: 55px;
 }
 
 @media (max-width: 40em) {
   .preview-title {
-      font-size: 80%;
+      font-size: 90%;
   }
   .page-date {
       font-size: 60%;
