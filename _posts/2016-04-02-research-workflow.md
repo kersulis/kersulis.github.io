@@ -1,3 +1,8 @@
+---
+layout: post
+title: "A research workflow"
+---
+
 # A research workflow
 *Jonas Kersulis*
 
