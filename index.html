@@ -3,24 +3,33 @@ layout: default
 title: Home
 color: "#003366"
 ---
+
 <div class="white-space"> </div>
 <div class="posts">
-{% for post in paginator.posts %}
-<div class="preview-hero">
-<div class="preview-container">
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="page-date right-align">{{ post.date | date_to_string }}</time>
-    <h2 class="preview-title left-align">
-      <a class="preview-link" href="{{ site.baseurl }}{{ post.url | remove_first:'/' }}">
-        {{ post.title }}
-      </a>
-    </h2>
-    {% if post.subtitle %}
-    <h3 class="post-subtitle">
-        {{ post.subtitle }}
-    </h3>
-    {% endif %}
-</div>
+    <h1>Posts</h1>
+{% for post in site.posts %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-</div>
+    {% if forloop.first %}
+    <h2>{{this_year}}</h2>
+    <ul>
+    {% endif %}
+    <li>
+          <a class="preview-link" href="{{ site.baseurl }}{{ post.url | remove_first:'/' }}">
+            {{ post.title }}
+          </a>
+    </li>
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if this_year != next_year %}
+    </ul>
+            <br>
+            <h2>{{next_year}}</h2>
+    <ul>
+        {% endif %}
+    {% endif %}
+
 {% endfor %}
 </div>
