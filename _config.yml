@@ -5,7 +5,6 @@ permalink:        pretty
 title:            Jonas Kersulis
 tagline:          Power & Energy, Python & Julia
 url:              kersulis.github.io
-paginate:         10
 baseurl:          /
 author:
   name:           Jonas Kersulis
@@ -13,10 +12,9 @@ author:
   email:          kersulis@umich.edu
 
 pages_list:
-  About: 'about'
+  Posts: 'posts'
   Presentations: 'presentations'
   # Archive: 'archive'
-  # Feed: '/atom.xml'
 
 colors:
   UmmaTan: '#cfc096'
@@ -37,4 +35,4 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-gems: [jekyll-paginate, jekyll-gist]
+gems: [jekyll-gist]
