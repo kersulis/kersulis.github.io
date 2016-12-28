@@ -4,11 +4,24 @@ title: Jonas Kersulis
 ---
 <div class="white-space"> </div>
 
-<img src="{{ site.baseurl }}images/avatar.jpg" style="float: right; width: 35%; margin-right: 1%; margin-bottom: 3em; margin-left: 0.5em">
-Hello, I'm Jonas Kersulis, a University of Michigan PhD student studying power and energy. I love making sense of complicated ideas and communicating them to others through writing and visualization.
+# Jonas Kersulis
 
-PhD students create by thinking, writing, and teaching. The most important product is the research paper, but there are many skills involved in research. Writing about the process helps me make sense of it. Most posts on this site will be about grad student life, software I find useful, and visualizations I find powerful.
+<img src="{{ site.baseurl }}images/avatar.jpg" style="float: right; width: 35%; margin-right: 1%; margin-bottom: 3em; margin-top: -3em; margin-left: 0.5em">
 
-I am currently studying the impacts of wind fluctuations on transmission and subtransmission networks. I am also a Graduate Student Instructor for EECS 551, Mathematical Methods for Signal Processing. [Email me](mailto:kersulis@umich.edu) to find out more or collaborate.
+## PhD candidate studying power and energy at University of Michigan
+[CV]({{ site.baseurl }}Jonas_Kersulis_CV.pdf) | [Email](mailto:kersulis@umich.edu) | [LinkedIn](http://www.linkedin.com/kersulis)
 
-Follow me on [LinkedIn](https://www.linkedin.com/in/kersulis) (professional) or [Instagram](https://instagram.com/jkersulis/) (personal).
+## Research
+
+I am currently studying the impacts of wind fluctuations on transmission and subtransmission networks. Check out [my research page]({{ site.baseurl }}research) and [email me](mailto:kersulis@umich.edu) to find out more or collaborate.
+
+## Teaching
+
+I love making sense of complicated ideas and communicating them to others. I give [presentations]({{ site.baseurl }}presentations), of course, but my favorite communication tools are visualization and code, as illustrated by [my projects]({{ site.baseurl }}projects). This approach is well-suited to EECS 551 (Mathematical Methods for Signal Processing), for which I have been a graduate student instructor.
+
+## Writing
+
+Writing about the process helps me make sense of it. Most <a href="{{ site.baseurl }}posts">posts</a> on this site will be about grad student life, software I find useful, and visualizations I find powerful.
+
+
+I am on [LinkedIn](https://www.linkedin.com/in/kersulis) (professional) and [Instagram](https://instagram.com/jkersulis/) (personal).

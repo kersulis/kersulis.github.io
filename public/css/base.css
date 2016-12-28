@@ -412,7 +412,7 @@ tbody tr:nth-child(odd) th {
 }
 .masthead-title {
   max-width: 38rem;
-  padding-left:  1rem;
+  padding-left:  0rem;
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
@@ -423,7 +423,8 @@ tbody tr:nth-child(odd) th {
 }
 .masthead-title a {
   color: white;
-  font-family: 'Open Sans'
+  font-family: 'Open Sans';
+  padding-left: 2em;
 }
 .masthead-title small {
     float: right;

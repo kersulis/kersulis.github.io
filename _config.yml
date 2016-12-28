@@ -14,7 +14,8 @@ author:
 pages_list:
   Posts: 'posts'
   Presentations: 'presentations'
-  # Archive: 'archive'
+  Research: 'research'
+  Projects: 'projects'
 
 colors:
   UmmaTan: '#cfc096'
