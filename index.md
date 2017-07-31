@@ -9,7 +9,7 @@ title: Jonas Kersulis
 <img src="{{ site.baseurl }}images/avatar.jpg" style="float: right; width: 35%; margin-right: 1%; margin-bottom: 3em; margin-top: -3em; margin-left: 0.5em">
 
 ## PhD candidate studying power and energy at University of Michigan
-[CV]({{ site.baseurl }}Jonas_Kersulis_CV.pdf) | [Email](mailto:kersulis@umich.edu) | [LinkedIn](http://www.linkedin.com/in/kersulis)
+[CV]({{ site.baseurl }}Jonas_Kersulis_CV.pdf) | [Email: kersulis@umich.edu](mailto:kersulis@umich.edu) | [LinkedIn](http://www.linkedin.com/in/kersulis)
 
 ## Research
 
