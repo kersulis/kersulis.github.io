@@ -6,6 +6,11 @@ color: "#003366"
 
 # Teaching
 
+## Integration of Renewable Energy (EECS 498)
+I filled in twice as instructor for Dr. Hiskens's power systems class in Winter 2017. The lectures introduced and summarized my research, but focused mostly on basics to ensure nobody was left behind (some of the students were new to the field).
+- [Transmission Network Effects of Wind Forecast Deviations][3]
+- [Load-tap-changing Transformers and Voltage Control][4]
+
 ## Introduction to Control Systems (EECS 460)
 
 <img src="{{ site.baseurl }}images/levitate.jpg" style="margin-right: 1%; margin-bottom: 1em; margin-left: 0.5em">
@@ -57,4 +62,6 @@ I translated the existing MATLAB demo into interactive Python and Julia notebook
 * matplotlib: the Python plotting package. Every time the slider is dragged, the figure must be updated. To minimize lag, I selectively redraw portions of the figure by referencing plot elements directly, rather than redrawing the entire canvas for every slider change.
 
 [1]: https://www.youtube.com/watch?v=a6DILypozzw
-[2]: https://ctools.umich.edu/gateway/
+[2]: https://ctools.umich.edu/gateway
+[3]: http://kersulis.github.io/presentations/498lecture
+[4]: http://kersulis.github.io/presentations/498lecture2
