@@ -6,6 +6,22 @@ color: "#003366"
 
 # Teaching
 
+## Introduction to Control Systems (EECS 460)
+
+<img src="{{ site.baseurl }}images/levitate.jpg" style="margin-right: 1%; margin-bottom: 1em; margin-left: 0.5em">
+
+### Summary
+
+In Winter 2017 I was the Graduate Student Instructor for EECS 460, an introductory control systems class with roughly 80 students. My tasks included hosting twice-weekly discussion sessions, managing and editing homework documents, grading exams, and running the magnetic levitation lab (the final project).
+
+### Skills applied
+
+* Lecturing: I prepared a concise set of slides to summarize each week's material and emphasize connections between topics as we progressed.
+* Active learning techniques: I was careful to give students time to work problems.
+* Visualization: I used Jupyter widgets to make an interactive visualization of a second-order transfer function response. This helped build intuitive understanding of the two parameters.
+* Gradescope: I scanned exam submissions and used Gradescope to set up online grading. This saved a great deal of time.
+* Scheduling: I used a Google Sheet to let students form into groups of 3-4 for the lab. I recorded a [hyperlapse video][1] to direct everyone to the obscure room. I oversaw each lab session, troubleshooting hardware and software problems as they came up. Finally, I used the University's [CTools site][2] to collect and grade all reports.
+
 ## Eigen-images (EECS 551)
 
 <img src="{{ site.baseurl }}images/eigenimages.png" style="margin-right: 1%; margin-bottom: 1em; margin-left: 0.5em">
@@ -39,3 +55,6 @@ I translated the existing MATLAB demo into interactive Python and Julia notebook
 * MATLAB, Python, and Julia (and translation between them)
 * ipywidgets: this is the Python package that defines widget components like sliders. The notebooks I made contain use sliders to allow students to "scrub through" video footage.
 * matplotlib: the Python plotting package. Every time the slider is dragged, the figure must be updated. To minimize lag, I selectively redraw portions of the figure by referencing plot elements directly, rather than redrawing the entire canvas for every slider change.
+
+[1]: https://www.youtube.com/watch?v=a6DILypozzw
+[2]: https://ctools.umich.edu/gateway/
