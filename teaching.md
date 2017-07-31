@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Projects
+title: Teaching
 color: "#003366"
 ---
 
-# Projects
+# Teaching
 
 ## Eigen-images (EECS 551)
 
