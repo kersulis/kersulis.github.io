@@ -35,4 +35,4 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-gems: [jekyll-gist]
+plugins: [jekyll-gist]
