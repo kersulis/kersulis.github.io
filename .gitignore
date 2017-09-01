@@ -29,6 +29,7 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
+lftp-script
 
 # grunt-html-validation
 validation-status.json
