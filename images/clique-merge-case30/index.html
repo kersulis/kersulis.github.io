@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<svg id="svg1" width="1600" height="1200"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+<script src="d3-sankey.js"></script>
+<script>
+
+var cname = "nesta_case30_ieee";
+
+var svg = d3.select("#svg1"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+var formatNumber = d3.format(",.0f"),
+    format = function(d) { return formatNumber(d) + " nodes"; },
+    colorOrd = d3.scaleOrdinal(d3.schemeCategory10);
+
+var sankey = d3.sankey()
+    .nodeWidth(15)
+    .nodePadding(8)
+    .extent([[40, 5], [width - 1, height - 6]])
+    .nodeAlign(d3.sankeyJustify);
+
+var link = svg.append("g")
+    .attr("class", "links")
+    .attr("fill", "none")
+    .attr("stroke", "#000")
+    .attr("stroke-opacity", 0.2)
+  .selectAll("path");
+
+var node = svg.append("g")
+    .attr("class", "nodes")
+    .attr("font-family", "sans-serif")
+    .attr("font-size", 10)
+  .selectAll("g");
+
+d3.json(cname + ".json", function(error, gmerge) {
+  if (error) throw error;
+
+  sankey(gmerge);
+
+  link = link
+    .data(gmerge.links)
+    .enter().append("path")
+      .attr("d", d3.sankeyLinkHorizontal())
+      .attr("stroke-width", function(d) { return Math.max(1, d.width); })
+      .attr("id", function(d,i){
+        d.id = i;
+        return "link-"+i;
+    });
+
+  link.append("title")
+        .text(function(d) { return d.source.name + " -> " + d.target.name + "\n" + format(d.value); });
+
+  node = node
+    .data(gmerge.nodes)
+    .enter().append("g")
+    .on("click", highlight_node_links);
+
+  var min_cost = d3.min(gmerge.nodes, function(d) { return d.cost; }),
+      max_cost = d3.max(gmerge.nodes, function(d) { return d.cost; });
+
+  var color = d3.scaleLinear()
+      .domain([min_cost, 0, -min_cost, max_cost])
+      .range(["green", "white", "pink", "red"]);
+
+  var colorLegend = d3.legendColor()
+    .labelFormat(d3.format(".0f"))
+    .scale(color)
+    .shapePadding(3)
+    .shapeWidth(40)
+    .shapeHeight(15)
+    .labelOffset(10)
+    .orient('horizontal')
+    .title("Change in number of variables due to merge")
+    .titleWidth(200);
+
+  svg.append("g")
+    .attr("transform", "translate(700, 50)")
+    .style("font-family","sans-serif")
+    .call(colorLegend)
+
+  node.append("rect")
+      .attr("x", function(d) { return d.x0; })
+      .attr("y", function(d) { return d.y0; })
+      .attr("height", function(d) { return d.y1 - d.y0; })
+      .attr("width", function(d) { return d.x1 - d.x0; })
+      .attr("fill", function(d) { return (typeof d.cost === "undefined") ? colorOrd(d.name.replace(/ .*/, "")) : color(d.cost); })
+      .attr("stroke", "#000");
+
+  node.append("text")
+      .attr("x", function(d) { return d.x0 - 6; })
+      .attr("y", function(d) { return (d.y1 + d.y0) / 2; })
+      .attr("dy", "0.35em")
+      .attr("text-anchor", "end")
+      .text(function(d) { return d.name; })
+    .filter(function(d) { return (d.x0 < width / 2 & d.type != 'bus'); })
+      .attr("x", function(d) { return d.x1 + 6; })
+      .attr("text-anchor", "start");
+
+  node.append("title")
+        .text(function(d) { return d.name + "\n" + (d.type === 'merge' ? d.value + " -> " + format(d.nodes) : d.type === 'clique' ? d.nodes + ' nodes' : 'in ' + d.value + ' cliques') + (d.type === 'merge' ? ("\n" + (d.cost >= 0 ? "+" : "") + d.cost + " vars") : ""); });
+
+});
+
+  function highlight_node_links(node,i){
+
+    var remainingNodes=[],
+        nextNodes=[];
+
+    var stroke_opacity = 0;
+    if( d3.select(this).attr("data-clicked") == "1" ){
+      d3.select(this).attr("data-clicked","0");
+      stroke_opacity = 0.2;
+    }else{
+      d3.select(this).attr("data-clicked","1");
+      stroke_opacity = 0.5;
+    }
+
+    var traverse = [{
+                      linkType : "sourceLinks",
+                      nodeType : "target"
+                    },{
+                      linkType : "targetLinks",
+                      nodeType : "source"
+                    }];
+
+    traverse.forEach(function(step){
+      node[step.linkType].forEach(function(link) {
+        remainingNodes.push(link[step.nodeType]);
+        highlight_link(link.id, stroke_opacity);
+      });
+
+      while (remainingNodes.length) {
+        nextNodes = [];
+        remainingNodes.forEach(function(node) {
+          node[step.linkType].forEach(function(link) {
+            nextNodes.push(link[step.nodeType]);
+            highlight_link(link.id, stroke_opacity);
+          });
+        });
+        remainingNodes = nextNodes;
+      }
+    });
+  }
+
+  function highlight_link(id,opacity){
+      d3.select("#link-"+id).style("stroke-opacity", opacity);
+  }
+
+  svg.append("text")
+          .attr("x", (width / 2))
+          .attr("y", 20)
+          .attr("text-anchor", "middle")
+          .style("font-size", "20px")
+          .style("font-family", "sans-serif")
+          .text("Greedy clique merge for chordal extension of " + cname);
+</script>
