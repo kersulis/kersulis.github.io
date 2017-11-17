@@ -25,6 +25,7 @@ From here, implementation of the clique merge algorithm is straightforward. Beca
 ## Results
 Rather than fixing a desired number of submatrices (denoted $L$ in [molzahn2013][3]), I use visualization techniques to show algorithm behavior from start to finish. The starting point for the algorithm is the set of maximal cliques, and the final merge yields a single group containing all nodes. This hierarchical clustering may be effectively visualized using a dendrogram or Sankey (alluvial) diagram.
 
+<<<<<<< HEAD
 ### Dendrograms
 A dendrogram (from the Greek *tree* + *drawing*) is perhaps the most common hierarchical clustering visualization tool. The nodes or smallest clusters (cliques in our case) lie along the bottom of the dendrogram, each having its own vertical line. As we follow a clique's vertical line upwards, we encounter a horizontal line representing a merge. The vertical axis value at this line indicates the change in number of variables due to that merge. The figure below illustrates application of the greedy clique merge algorithm to a chordal extension of the IEEE 30-bus test case.
 
@@ -53,6 +54,12 @@ In this post I applied two visualization techniques to the greedy clique merge a
 - Compare clique merge behavior with clique composition for [NESTA][6] cases.
 - Plot merge gaps (dendrogram vertical axis values) for all NESTA cases and look for patterns.
 - Run clique merge on all NESTA networks, but terminate once merges no longer reduce problem size. Might the state of the algorithm at that point be connected to system structure? What is the number of submatrices at this termination point for NESTA networks, and how large are they? Do these properties scale with network size?
+=======
+I generated Sankey diagrams to illustrate clique merge algorithm behavior for two test networks. Try clicking on a rectangle to trace a node, clique, or merged group backwards and forwards through the algorithm.
+- [IEEE 30-bus test case][1]. This small network is ideal for introducing the Sankey diagram.
+- [PEGASE 89-bus test case][2]. This larger network illustrates the outsized role played by a handful of nodes and cliques.
+
+>>>>>>> e08273f31ee550b998cfe2a761cfc9b665b7f2db
 
 ### Footnotes
 [^1]: In a chordal graph, any path of length four or greater has a *chord*, which is an edge connecting non-adjacent nodes in the path.
@@ -63,4 +70,7 @@ In this post I applied two visualization techniques to the greedy clique merge a
 [3]: http://ieeexplore.ieee.org/document/6510541/
 [4]: http://faculty.cse.tamu.edu/davis/suitesparse.html
 [5]: https://networkx.github.io/
+<<<<<<< HEAD
 [6]: https://www.researchgate.net/publication/267759575_NESTA_The_NICTA_Energy_System_Test_Case_Archive
+=======
+>>>>>>> e08273f31ee550b998cfe2a761cfc9b665b7f2db
