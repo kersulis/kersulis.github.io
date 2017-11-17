@@ -6,9 +6,28 @@ color: "#003366"
 
 # Research and Publications
 
+## Topological graph metrics for power systems
+### Background
+Researchers at Michigan and LANL have developed [a new data format for power networks][grg] pursuant to the goals of the [ARPA-E GRID DATA project][grid-data]. To facilitate community adoption of this flexible, high-fidelity format, we have developed tools for checking GRG-format data files. Parameter checks ensure that component-level properties, such as line impedance and generator output limits, have reasonable values. System-wide checks determine whether a grid's connectivity pattern is reasonable. I developed these latter checks.
+
+### Output
+- **Conference paper:** J. Kersulis, I. Hiskens, C. Coffrin, and D. Molzahn, "Topological Graph Metrics for Detecting Grid Anomalies and Improving Algorithms," in Power Systems Computation Conference 2018 [submitted], 2017, pp. 1-7.
+
+- **System-wide metric software:** I packaged my topological graph metric software into a Python package. A user need enter just three lines of code to check every GRG-format data file in a directory:
+```python
+    import grg_metrics
+    metrics = grg_metrics.compute_metrics('path/to/folder/')
+    msg = grg_metrics.analyze_metrics(metrics)
+```
+The code reports warning and error messages for any abnormal graph structures it identifies.
+
+- **Presentation:** I presented system-wide metrics work to ARPA-E representatives at their site review in late September 2017.
+
+- **Collaboration:** While developing system-wide metric software to satisfy ARPA-E requirements, we grew increasingly interested in the connections between graph metrics and computational performance. Dan Molzahn is an expert in power semidefinite relaxations of power system optimization problems like optimal power flow. With his Lasserre hierarchy implementation, we were able to study the effect of various maximal clique decompositions on SDP OPF solver time.
+
 ## Load-tap-changing (LTC) transformer trade-off
 ### Background
-See [this presntation][4] for an overview. Load-tap-changing (LTC) transformers perform voltage control in subtransmission and distribution systems throughout the day. Renewable fluctuation can result in excessive tapping, leading to premature breakdown for these critical and expensive devices. Prior literature suggested reactive power compensation as a viable solution. Indeed, local voltage regulation at a wind farm will keep downstream distribution LTCs from having to offset fluctuation. But we show that this policy has an adverse side-effect: reactive power fluctuations must be compensated upstream, resulting in subtransmission LTC tapping. A simple toy network illustrates the trade-off between subtransmission and distribution tapping, and we discuss the optimal renewable voltage regulation policy.
+See [this presentation][4] for an overview. Load-tap-changing (LTC) transformers perform voltage control in subtransmission and distribution systems throughout the day. Renewable fluctuation can result in excessive tapping, leading to premature breakdown for these critical and expensive devices. Prior literature suggested reactive power compensation as a viable solution. Indeed, local voltage regulation at a wind farm will keep downstream distribution LTCs from having to offset fluctuation. But we show that this policy has an adverse side-effect: reactive power fluctuations must be compensated upstream, resulting in subtransmission LTC tapping. A simple toy network illustrates the trade-off between subtransmission and distribution tapping, and we discuss the optimal renewable voltage regulation policy.
 
 ### Output
 - **Conference paper:** J.A. Kersulis, I.A. Hiskens, "Renewable Voltage Regularion and the Transformer Tapping Trade-off," in Innovative Smart Grid Technologies Asia 2016, 2016, pp. 1-6.
@@ -36,3 +55,5 @@ The output of our algorithm is a ranked list of forecast deviations, each of whi
 [2]: {{ site.baseurl }}docs/instanton_egs_2015_poster.pdf
 [3]: http://kersulis.github.io/presentations/498lecture
 [4]: http://kersulis.github.io/presentations/498lecture2
+[grg]: https://gdg.engin.umich.edu/
+[grid-data]: https://arpa-e.energy.gov/?q=arpa-e-programs/grid-data
