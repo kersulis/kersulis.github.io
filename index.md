@@ -17,7 +17,7 @@ I am currently studying the impacts of wind fluctuations on transmission and sub
 
 ## Teaching
 
-I love making sense of complicated ideas and communicating them to others. I give [presentations]({{ site.baseurl }}presentations), of course, but my favorite communication tools are visualization and code, as illustrated by [my teaching projects]({{ site.baseurl }}teaching). This approach is well-suited to EECS 551 (Mathematical Methods for Signal Processing), for which I have been a graduate student instructor twice.
+I love making sense of complicated ideas and communicating them to others. I give [presentations]({{ site.baseurl }}presentations), of course, but my favorite communication tools are visualization and code, as illustrated by [my teaching projects]({{ site.baseurl }}teaching). This approach is well-suited to EECS 551 (Mathematical Methods for Signal Processing), for which I have been a graduate student instructor three times.
 
 ## Writing
 
