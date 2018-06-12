@@ -15,6 +15,7 @@ pages_list:
   Posts: 'posts'
   Research: 'research'
   Teaching: 'teaching'
+  Presentations: 'presentations'
 
 colors:
   UmmaTan: '#cfc096'

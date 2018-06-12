@@ -1,0 +1,47 @@
+- name: 2018-06-14-pscc
+  event: PSCC 2018
+  title: Topological Graph Metrics
+  subject:
+  date: 2018-06-14
+
+- name: 2018-06-01-arpa-e
+  event: ARPA-E GRID DATA quarterly review
+  title: Time Series Metrics
+  subject:
+  date: 2018-06-01
+
+- name: 460discussion
+  event: Discussion section
+  title: EECS 460 Discussion
+  subject:
+  date: 2017
+
+- name: 2017-09-29-arpa-e
+  event: ARPA-E GRID DATA quarterly review
+  title: System-wide Metrics
+  subject:
+  date: 2017-09-29
+
+- name: 498lecture
+  event: Substitute lecture
+  title: EECS 498 Lecture
+  subject:
+  date: 2017
+
+- name: 498lecture2
+  event: Substitute lecture
+  title: EECS 498 Lecture
+  subject:
+  date: 2017
+
+- name: 2016-03-24-group-presentation
+  event: Group meeting
+  title: Group presentation
+  subject:
+  date: 2016-03-24
+
+- name: 2015-04-14-group-presentation
+  event: Group meeting
+  title: Group Presentation
+  subject:
+  date: 2015-04-14
